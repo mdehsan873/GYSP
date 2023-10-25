@@ -139,8 +139,7 @@ const RegisterSchool = () => {
                     url: 'account/signup/school/',
                     headers: {
                         "Content-Type": "multipart/form-data",
-                        accept: 'application/json',
-                        'Authorization': 'Bearer ' + secureLocalStorage.getItem('access'),                    
+                        accept: 'application/json'              
         
                     },
                     data: formData
