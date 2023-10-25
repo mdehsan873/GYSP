@@ -425,7 +425,7 @@ export default function AddStudentDialog({ open, setOpen, }) {
                 </Stack>
                 <DialogContent sx={{ borderRadius: "21px", padding: "0px 35px 40px 35px" }}>
                     <Stack margin={2} style={{ marginBottom: 0 }} direction={"row"} alignItems={"center"}>
-                        <Typography variant='h6' fontSize={"12px"}>Search student with Reportify username</Typography>
+                        <Typography variant='h6' fontSize={"12px"}>Search student with GYSP username</Typography>
                         <FormControl variant="standard" sx={{ width: '292px', margin: "0px 12px", flexDirection: "row", alignItems: "center", borderBottom: "1px solid #BEBEBE" }}>
                             <input value={searchStudent}
                                 onChange={handleChangeSearch}
@@ -481,7 +481,7 @@ export default function AddStudentDialog({ open, setOpen, }) {
                         </Stack>
                     )}
                     <Stack margin={2} gap={1} style={{ marginTop: "30px" }} direction={"row"}>
-                        <Typography variant='h6' fontSize={"12px"}>Not registered with Reportify?</Typography>
+                        <Typography variant='h6' fontSize={"12px"}>Not registered with GYSP?</Typography>
                         <Typography variant='h6' fontSize={"12px"} color={"#1A73E8"} style={{ cursor: "pointer" }} onClick={openHandleStudent}>REGESTER NOW!</Typography>
                     </Stack>
                 </DialogContent>
@@ -565,7 +565,7 @@ export default function AddStudentDialog({ open, setOpen, }) {
                                             onChange={handleChange}
                                             name='email'
                                             inputProps={{ style: { textTransform: "none" } }}
-                                            placeholder="reportify@gmail.com"
+                                            placeholder="email@gysp.in"
                                         />
                                         {errors.email && touched.email ? <p style={{ color: "red", marginBottom: "0px", fontSize: "10px" }}>{errors.email}</p> : null}
                                     </Stack>

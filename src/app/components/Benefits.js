@@ -6,89 +6,51 @@ function Benefits() {
   return (
     <section className="container mt-24 space-y-24">
       <BenefitItem
-        image="./images/benefit-1.svg"
-        heading1="Effortless Validation for"
-        heading2="Management"
-        description="The Myspace page defines the individual, his or her characteristics,
-      traits, personal choices and the overall personality of the person."
+        image="./images/co_curricular.png"
+        heading1="Co-Curricular"
+        heading2=" Performance Evaluation"
         Content={() => (
           <div>
-            <h5 className="mt-6 mb-2 font-semibold">Accessory makers</h5>
+            <h5 className="mt-6 mb-2 font-semibold">Standardized Evaluation Metrics</h5>
             <p>
-              While most people enjoy casino gambling, sports betting, lottery
-              and bingo playing for the fun
+            Our innovative platform offers standardized methodologies to gauge a student's performance in co-curricular activities,
+            providing a well-rounded view of their abilities and talents
             </p>
-            <h5 className="mt-6 mb-2 font-semibold">Alterationists</h5>
+            <h5 className="mt-6 mb-2 font-semibold">Encouragement to Diversity:</h5>
             <p>
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
+            GYSP encourages students to venture into diverse co-curricular activities,
+             fostering a balanced and enriched growth trajectory.
             </p>
           </div>
         )}
       />
 
       <BenefitItem
-        image="./images/benefit-2.svg"
-        heading1="Easier decision making for"
-        heading2="Customer Support"
-        description="The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. "
+        image="./images/growth-mapping.png"
+        heading1="Growth"
+        heading2="Mapping"
+        description="Real-time student growth mapping provides a dynamic, data-driven snapshot of each student's educational journey, fostering tailored support and personalized progress tracking."
         Content={() => (
           <div className="flex flex-col space-y-6">
-            <CheckedItem
-              bgColor="#FF9900"
-              text="Never worry about overpaying for your energy again."
-            />
-            <CheckedItem
-              bgColor="#F03E3D"
-              text="We will only switch you to energy companies that we trust and will treat you right"
-            />
-            <CheckedItem
-              bgColor="#4D8DFF"
-              text="We track the markets daily and know where the savings are."
-            />
+           <h5 className="mt-6 mb-2 font-semibold">Subject Wise:</h5>
+            <p>
+            Subject-wise growth mapping enables educators to pinpoint strengths and weaknesses, empowering targeted interventions and fostering holistic academic development.
+            </p>
           </div>
         )}
       />
 
       <BenefitItem
-        image="./images/benefit-3.svg"
-        heading1="Optimisation for"
-        heading2="Collaborative"
-        description="Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. "
+        image="./images/Acadmics.png"
+        heading1="Academics"
+        heading2="Performance Evaluation"
+        description="Our Performance Evaluation tool incorporates advanced analytics, offering in-depth insights to enhance decision-making and drive continuous improvement, making it a valuable asset for assessing and optimizing performance."
         Content={() => (
           <div>
-            <h5 className="mt-6 mb-2 font-semibold">Accessory makers</h5>
+            <h5 className="mt-6 mb-2 font-semibold">Standardized Evaluation Metrics</h5>
             <p>
-              While most people enjoy casino gambling, sports betting, lottery
-              and bingo playing for the fun
+            Standardized evaluation metrics in student performance assessment provide a consistent framework to gauge academic achievement and growth, ensuring fairness and objectivity in the performance evaluation process.
             </p>
-            <h5 className="mt-6 mb-2 font-semibold">Alterationists</h5>
-            <p>
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
-            </p>
-          </div>
-        )}
-      />
-         <BenefitItem
-        image="./images/benefit-2.svg"
-        heading1="Easier decision making for"
-        heading2="Customer Support"
-        description="The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. "
-        Content={() => (
-          <div className="flex flex-col space-y-6">
-            <CheckedItem
-              bgColor="#FF9900"
-              text="Never worry about overpaying for your energy again."
-            />
-            <CheckedItem
-              bgColor="#F03E3D"
-              text="We will only switch you to energy companies that we trust and will treat you right"
-            />
-            <CheckedItem
-              bgColor="#4D8DFF"
-              text="We track the markets daily and know where the savings are."
-            />
           </div>
         )}
       />

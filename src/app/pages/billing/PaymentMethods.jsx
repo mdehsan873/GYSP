@@ -47,7 +47,7 @@ export default function PaymentMethods() {
                         <Stack direction={'row'} alignItems='center' spacing={1}>
                             <Image src={require('../../assets/Logo/logo_white2x.png')} height='50' />
                             <Stack>
-                                <Typography variant='h5'>Reportify</Typography>
+                                <Typography variant='h5'>GYSP</Typography>
                                 <Typography>Active</Typography>
                                 <Typography>Since Feb 20th 2023</Typography>
                             </Stack>

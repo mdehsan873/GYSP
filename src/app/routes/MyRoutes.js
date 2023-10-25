@@ -159,9 +159,10 @@ export default function MyRoutes() {
                 <Routes>
                   <Route path="/login" element={<Login />} />
                   <Route path="/forget-password" element={<ForgetPassword />} />
-                  {/* <Route path='/register-school' element={<RegisterSchool />} /> */}
+                  <Route path='/register-school' element={<RegisterSchool />} />
                   <Route path="/reset-password/:id/:token" element={<ResetPassword />} />
-                  <Route path="/*" element={<Login />} />
+                  <Route path="/" element={<Login />} />
+                  {/* <Route path="/register-school" element={<RegisterSchool />} /> */}
                 </Routes>
               </>
             )}
@@ -172,6 +173,7 @@ export default function MyRoutes() {
               <Route path="/login" element={<Login />} />
               <Route path="/forget-password" element={<ForgetPassword />} />
               {/* <Route path='/register-school' element={<RegisterSchool />} /> */}
+               <Route path='/register-school' element={<RegisterSchool />} />
               <Route path="/reset-password/:id/:token" element={<ResetPassword />} />
               <Route path="/*" element={<Login />} />
             </Routes>

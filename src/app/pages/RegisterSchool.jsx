@@ -276,11 +276,7 @@ const RegisterSchool = () => {
     };
 
     
-    useEffect(() => {
-        if(secureLocalStorage.getItem('role') !=='admin'){
-            window.location.reload();
-        }
-    }, [])
+   
 
     return (
         <Container maxWidth='lg' sx={{ backgroundColor: '#f7fafa' }}>

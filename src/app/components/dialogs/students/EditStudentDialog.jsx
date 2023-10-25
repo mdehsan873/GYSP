@@ -541,7 +541,7 @@ export default function AddStudentDialog({ open, setOpen, id, secId }) {
                                             name='email'
                                             onKeyDown={(e) => { handleKey(e) }}
                                             inputProps={{ style: { textTransform: "none" } }}
-                                            placeholder="reportify@gmail.com"
+                                            placeholder="gysp@gmail.com"
                                         />
                                         {errors.email && touched.email ? <p style={{ color: "red", marginBottom: "0px", fontSize: "10px" }}>{errors.email}</p> : null}
                                     </Stack>

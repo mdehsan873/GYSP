@@ -26,38 +26,34 @@ function Features() {
         title="Academics Performance Evaluation"
         iconBgColor="#02897A"
       />
-      <Feature
-        Icon={UsersIcon}
-        iconBgColor="#4D8DFF"
-        title="Growth Mapping"
-      />
+      
       <Feature
         Icon={HeartIcon}
         iconBgColor="#740A76"
         title="Dynamic Reporting"
-        description="While most people enjoy casino gambling,"
       />
       <Feature
         Icon={ClockIcon}
         iconBgColor="#F03E3D"
         title="Deep Analytics"
-        description="While most people enjoy casino gambling,"
       />
        <Feature
         Icon={ClockIcon}
         iconBgColor="#F03E3D"
         title="AI Assistance"
-        description="While most people enjoy casino gambling,"
       />
        <Feature
         Icon={ClockIcon}
         iconBgColor="#F03E3D"
         title="Weekly Test"
-        description="While most people enjoy casino gambling,"
+      />
+      <Feature
+        Icon={UsersIcon}
+        iconBgColor="#4D8DFF"
+        title="Growth Mapping"
       />
       </div>
 
-      <button className="primary-button mt-14">Sign up Now</button>
 
     </section>
   );

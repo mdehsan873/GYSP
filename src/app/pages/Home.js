@@ -169,7 +169,7 @@ export default function Home() {
               {school?.name || "School Name"}
             </Typography>
             <Typography variant="h6">
-              Welcome to reportify admin console
+              Welcome to GYSP admin console
             </Typography>
           </Stack>
         </Stack>

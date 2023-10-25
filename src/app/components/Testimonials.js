@@ -3,10 +3,10 @@ import TestimonialItem from "./TestimonialItem";
 
 function Testimonials() {
   const testimonial =
-    "Product helps you see how many more days you need to work to reach your financial goal.";
+    "The product helps you see how much work is needed to reach your goal.";
   return (
     <section className="container mt-36 text-center flex flex-col items-center">
-      <h3 className="text-4xl font-bold">What Clients Say</h3>
+      <h3 className="text-4xl font-bold">What Parent and Teacher Says</h3>
       <p className="font-medium mt-4 max-w-lg">
         Problems trying to resolve the conflict between the two major realms of
         Classical physics: Newtonian mechanics{" "}

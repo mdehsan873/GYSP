@@ -164,7 +164,7 @@ export const StudentProfile = () => {
                                             </Box>
                                             <InfoBox Head={'Username'} Desc={studentDetails.student_details?.username} onPresIcon={() => handleEditDetails("Username", "username", studentDetails.student_details?.username, "text")} IconTag={<Edit sx={{ width: "15px", height: "15px" }} />} />
                                             <InfoBox Head={'Password'} Desc={'********'} onPresIcon={editPassword} IconTag={<Edit sx={{ width: "15px", height: "15px" }} />} />
-                                            <InfoBox Head={'Reportify ID'} Desc={studentDetails.student_details?.id} />
+                                            <InfoBox Head={'GYSP ID'} Desc={studentDetails.student_details?.id} />
                                             <InfoBox Head={'Date Of Registration'} Desc={formatDate(studentDetails.student_details?.created_at)} />
                                             <InfoBox Head={'Current School'} Desc={studentDetails.school_details?.name} />
                                         </Box>
@@ -250,7 +250,7 @@ export const StudentProfile = () => {
                                             </Box>
                                             <InfoBox Head={'Username'} Desc={studentDetails.student_details?.username} onPresIcon={() => handleEditDetails("Username", "username", studentDetails.student_details?.username, "text")} IconTag={<Edit sx={{ width: "15px", height: "15px" }} />} />
                                             <InfoBox Head={'Password'} Desc={'********'} onPresIcon={editPassword} IconTag={<Edit sx={{ width: "15px", height: "15px" }} />} />
-                                            <InfoBox Head={'Reportify ID'} Desc={studentDetails.student_details?.id} />
+                                            <InfoBox Head={'GYSP ID'} Desc={studentDetails.student_details?.id} />
                                             <InfoBox Head={'Date Of Registration'} Desc={formatDate(studentDetails.student_details?.created_at)} />
                                             <InfoBox Head={'Current School'} Desc={studentDetails.school_details?.name} />
                                         </Box>

@@ -165,9 +165,6 @@ export default function Login() {
 <Features />
 
 <Benefits/>
-
-<Blogs/>
-
 <PriceTable/>
 
 <Testimonials/>

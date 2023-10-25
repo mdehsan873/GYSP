@@ -4,7 +4,7 @@ function BenefitItem({ image, heading1, heading2, description, Content }) {
   return (
     <div className="md:flex flex-row-reverse even:flex-row justify-between items-center">
       <div className="md:max-w-[50%]">
-        <img src={image} alt={heading2} />
+        <img src={image} />
       </div>
 
       <div className="text-left md:max-w-[40%] mt-14 md:mt-0">
