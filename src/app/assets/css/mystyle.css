@@ -1,0 +1,21 @@
+/* colors */
+.secondary{
+    color:#1A73E8
+}
+.bg-main{
+    color:#f7fafa
+}
+a{
+    text-decoration: none;
+}
+input{
+    padding: 5px;
+}
+select{
+    padding: 5px;
+}
+
+.tbl tr{
+    border: 5px solid transparent;
+    margin:15px;
+}
