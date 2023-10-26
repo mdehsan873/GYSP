@@ -21,6 +21,15 @@ export const getAxiosWithToken = () => {
   }
   return Axios.create(config)
 }
+export const getAxiosWithNoToken = () => {
+  let config = {
+    baseURL: 'https://cyber-tutor-x-backend.vercel.app/',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  }
+  return Axios.create(config)
+}
 export const getAxiosWithToken2 = (token) => {
   let config = {
     baseURL: 'https://cyber-tutor-x-backend.vercel.app/',

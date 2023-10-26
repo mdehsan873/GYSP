@@ -2,7 +2,7 @@ import { Container, InputAdornment, FormLabel, Grid, Input, Paper, Stack, TextFi
 import React, { useState } from 'react'
 import { IconButton } from '@mui/material';
 import Loader from '../components/Loader'
-import { getAxiosWithToken } from '../axios/AxiosObj'
+import { getAxiosWithNoToken } from '../axios/AxiosObj'
 import Success from '../components/dialogs/Success'
 import { toast } from 'react-toastify';
 import { useEffect } from 'react'
@@ -145,7 +145,7 @@ const RegisterSchool = () => {
                     data: formData
                 };
 
-                const AxiosObj = getAxiosWithToken();
+                const AxiosObj = getAxiosWithNoToken();
 
                 setLoading(true)
                 AxiosObj.request(config)
