@@ -104,6 +104,7 @@ export default function UserPanel() {
         const Axios = getAxiosWithToken();
 
         if (secureLocalStorage.getItem("overallRAWdata")) {
+            console.log("overall called","hello")
             setOverallRAWdata(secureLocalStorage.getItem("overallRAWdata"))
         } else {
             // Overall
@@ -140,9 +141,10 @@ export default function UserPanel() {
         }
         
         if (secureLocalStorage.getItem("curricularRAWdata")) {
+            console.log("clalled")
             setCurricularRAWdata(secureLocalStorage.getItem("curricularRAWdata"))
         } else {
-
+            console.log("clalled")
             // Cocurricular 
             Axios.get(`result/get/cocurricular/?session_id=${selectedSession}`)
                 .then(async (res) => {
@@ -156,9 +158,6 @@ export default function UserPanel() {
                             if (res.data.Data?.co_data.length == 0) {
                                 indexS = indexS + 1;
                                 const foundItem2 = await sessions.find(item => item.id == selectedSession);
-                                if (foundItem2) {
-                                    toast.error(`${foundItem2.name || "This session"} has no data`);
-                                }
                                 if (secureLocalStorage.getItem("firstTab")) {
                                     setFirstTab(false)
                                     secureLocalStorage.setItem('firstTab', false)
@@ -195,9 +194,7 @@ export default function UserPanel() {
 
     useEffect(() => {
         // result/get/result/overall/?session_id=4
-        if (selectedSession !== "" && selectedSession != "1") {
-            getResult();
-        }
+        getResult();
     }, [selectedSession])
 
 
@@ -467,6 +464,7 @@ export default function UserPanel() {
     const coCurricularBtn = useRef(null);
     const coCurricularBtnClick = useRef(null);
     const handleClickCurricular = () => {
+        console.log("iski maa")
         if (coCurricularBtn.current && coCurricularBtnClick.current) {
             coCurricularBtnClick.current.click(); // Simulate click on Button1 after a delay
         }

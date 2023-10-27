@@ -3,17 +3,21 @@ import secureLocalStorage from "react-secure-storage";
 
 const token = secureLocalStorage.getItem('access')
 
+let local = "http://127.0.0.1:8000/"
+let dev = "https://cyber-tutor-x-backend.vercel.app/"
+let url = dev;
+
 let config = {
-  baseURL: 'https://cyber-tutor-x-backend.vercel.app/',
+  baseURL: url,
   headers: {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer ' + secureLocalStorage.getItem('access')
   },
 }
-export const AxiosNoToken = Axios.create({ baseURL: 'https://cyber-tutor-x-backend.vercel.app/' })
+export const AxiosNoToken = Axios.create({ baseURL: url})
 export const getAxiosWithToken = () => {
   let config = {
-    baseURL: 'https://cyber-tutor-x-backend.vercel.app/',
+    baseURL: url,
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + secureLocalStorage.getItem('access')
@@ -23,7 +27,7 @@ export const getAxiosWithToken = () => {
 }
 export const getAxiosWithNoToken = () => {
   let config = {
-    baseURL: 'https://cyber-tutor-x-backend.vercel.app/',
+    baseURL: url,
     headers: {
       'Content-Type': 'application/json',
     },
@@ -32,7 +36,7 @@ export const getAxiosWithNoToken = () => {
 }
 export const getAxiosWithToken2 = (token) => {
   let config = {
-    baseURL: 'https://cyber-tutor-x-backend.vercel.app/',
+    baseURL: url,
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token

@@ -169,7 +169,7 @@ export default function Home() {
               {school?.name || "School Name"}
             </Typography>
             <Typography variant="h6">
-              Welcome to GYSP admin console
+              Welcome to GYSP School Pannel
             </Typography>
           </Stack>
         </Stack>

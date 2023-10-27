@@ -307,11 +307,6 @@ export default function UserHeader() {
               </div>
             )}
             <Link to={'/'}>
-              <Image
-                src={require("../assets/Logo/logo2x.png")}
-                height={mob ? 20 : 30}
-                style={{ marginLeft: mob ? 5 : 40 }}
-              />
             </Link>
             {mob ? (<Stack direction={"row"} alignItems="center">
               <IconButton>

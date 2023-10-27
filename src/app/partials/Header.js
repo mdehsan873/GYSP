@@ -89,7 +89,7 @@ function PositionedMenu() {
 
 export default function Header() {
   const matches = useMediaQuery("(max-width:768px)");
-  const mob = useMediaQuery("(max-width:986px)");
+  const mob = useMediaQuery("(max-width:200px)");
   const { collapseSidebar } = useProSidebar();
   const styles = Stylesheet.create({
     menuStyle: {
@@ -136,11 +136,12 @@ export default function Header() {
                 <MenuIcon color="primary" />
               </IconButton>
             )}
-            <Image
-              src={require("../assets/Logo/logo2x.png")}
-              height={mob ? 20 : 30}
+            <p>GYSP</p>
+            {/* <Image
+              src={require("../assets/Logo/logo_white2x.png")}
+              height={mob ? 10 : 15}
               style={{ marginLeft: 40 }}
-            />
+            /> */}
             <Stack direction={"row"} alignItems="center">
               <IconButton>
                 <NotificationsNoneIcon color="primary" />
