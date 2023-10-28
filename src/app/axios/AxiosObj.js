@@ -5,7 +5,7 @@ const token = secureLocalStorage.getItem('access')
 
 let local = "http://127.0.0.1:8000/"
 let dev = "https://cyber-tutor-x-backend.vercel.app/"
-let url = local;
+let url = dev;
 
 let config = {
   baseURL: url,
