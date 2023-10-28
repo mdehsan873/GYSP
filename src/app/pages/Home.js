@@ -103,7 +103,32 @@ export default function Home() {
       }
 
       if (countResult === "Loading...") {
-        setCountResult(1);
+        if (secureLocalStorage.getItem("countResult")) {
+          setCountResult(secureLocalStorage.getItem("countResult"));
+        } else {
+          try {
+            let config = {
+              method: 'GET',
+              maxBodyLength: Infinity,
+              url: "result/get/all/result/",
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + secureLocalStorage.getItem('access')
+              },
+            };
+            const AxiosObj = getAxiosWithToken();
+            const resultResponse = await AxiosObj.request(config);
+            setCountResult(resultResponse.data.Data.length);
+            if (resultResponse.data.Data) {
+              secureLocalStorage.setItem('countResult', resultResponse.data?.Data?.length)
+            }
+          } catch (error) {
+            if (error.response.status === 401) {
+              window.location.reload(true);
+            }
+            setCountResult("Loading...");
+          }
+        }
       }
 
       

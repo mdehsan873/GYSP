@@ -79,11 +79,7 @@ export default function UserPanel() {
     const [curricularRAWdata, setCurricularRAWdata] = useState([]);
 
     useEffect(() => {
-        if (secureLocalStorage.getItem("studentTabSession")) {
-            setSelectedSession(secureLocalStorage.getItem("studentTabSession"))
-        } else {
-            setSelectedSession(sessions[0].id)
-        }
+        setSelectedSession(sessions[0].id)
     }, [sessions])
 
     useEffect(() => {
