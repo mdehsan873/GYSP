@@ -2,13 +2,19 @@ import React from "react";
 
 function PriceCard({ title, description, price, operators,type }) {
   const features = [
-    `Co-Curricular Performance Evaluation`,
-    `Academics Performance Evaluation`,
-    "Deep Analytics",
-    "Dynamic Reporting",
+    `Test result`,
+    `Marks comparison`,
+    "Attendance, teacher's & co-scholastic",
+    "Access to all test results",
+    "Analytic & growth mapping",
+    "Co-curricular achievements",
+    "Co-curricular grading",
+    "Co-curricular events details",
+    "Events vs participation details",
+    "Co-curricular outcome mapping",
     "Weekly Test",
-    "Growth Mapping",
     "AI Assistance"
+
   ];
   return (
     <div className="border min-w-[80vw] sm:min-w-[400px] md:min-w-full group even:bg-primary even:text-white flex flex-col items-center rounded-xl shadow-borderShadow">

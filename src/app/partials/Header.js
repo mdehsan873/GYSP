@@ -1,4 +1,4 @@
-import { AppBar, Box, useMediaQuery, IconButton, Button, Toolbar, Container, Stack } from "@mui/material";
+import { AppBar, Box, useMediaQuery, IconButton, Button, Toolbar, Container, Stack,Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Stylesheet from "reactjs-stylesheet";
@@ -136,12 +136,7 @@ export default function Header() {
                 <MenuIcon color="primary" />
               </IconButton>
             )}
-            <p>GYSP</p>
-            {/* <Image
-              src={require("../assets/Logo/logo_white2x.png")}
-              height={mob ? 10 : 15}
-              style={{ marginLeft: 40 }}
-            /> */}
+            <Typography variant="h4" color="blue">GYSP</Typography>
             <Stack direction={"row"} alignItems="center">
               <IconButton>
                 <NotificationsNoneIcon color="primary" />

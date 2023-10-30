@@ -242,6 +242,7 @@ export default function UserHeader() {
       position="fixed"
     >
       <Container disableGutters maxWidth="xxl">
+        
         <Toolbar sx={{ minHeight: mob ? 50 : 50 }}>
           <Box
             display={"flex"}
@@ -252,7 +253,7 @@ export default function UserHeader() {
             {!mob ? (studentDetails && studentDetails.school_details ? (
               studentDetails.school_details.logo ? (
                 <Image
-                  src={"https://cyber-tutor-x-backend.vercel.app/" + studentDetails.school_details.logo}
+                  src={studentDetails.school_details.logo}
                   height={mob ? 20 : 30}
                   style={{ marginLeft: 5 }}
                 />
@@ -263,19 +264,21 @@ export default function UserHeader() {
                   style={{ marginLeft: 5 }}
                 />
               )
+
             ) : (
               <Image
                 src={require("../assets/Logo/noimage.png")}
                 height={mob ? 20 : 30}
                 style={{ marginLeft: 5 }}
               />
+              
             )) : (
               <div>
                 <IconButton style={{ padding: "0" }} onClick={toggleDrawer(true)}>
                   {studentDetails && studentDetails.profile_image ? (
                     studentDetails.profile_image ? (
                       <Image
-                        src={"https://cyber-tutor-x-backend.vercel.app/" + studentDetails.profile_image}
+                        src={studentDetails.profile_image}
                         height={mob ? 40 : 40}
                         width={mob ? 40 : 40}
                         style={{ marginLeft: 0, borderRadius: "50px" }}
@@ -306,14 +309,12 @@ export default function UserHeader() {
                 </Drawer>
               </div>
             )}
+            <Typography variant="h5" color="black">{studentDetails.school_details?.name.toUpperCase()}</Typography>
             <Link to={'/'}>
-              {/* <Image
-                src={require("../assets/Logo/logo2x.png")}
-                height={mob ? 20 : 30}
-                style={{ marginLeft: mob ? 5 : 40 }}
-              /> */}
+            <Typography variant="h4" color="blue">GYSP</Typography>
             </Link>
             {mob ? (<Stack direction={"row"} alignItems="center">
+              
               <IconButton>
                 <NotificationsNoneIcon color="primary" style={{ fontSize: "26px" }} />
               </IconButton>

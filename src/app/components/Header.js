@@ -1,6 +1,16 @@
 import React from "react";
 import { MenuIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
+import {
+  AppBar,
+  Box,
+  useMediaQuery,
+  IconButton,
+  Button,
+  Toolbar, Typography,
+  Container,
+  Stack,
+} from "@mui/material";
 function Header() {
   // const navItems = [];
   const navigate = useNavigate();
@@ -21,8 +31,7 @@ function Header() {
       <div className="flex items-center">
         <MenuIcon className="h-10 md:hidden" />
         <div className="hidden md:flex items-center space-x-3 lg:space-x-8">
-          {/* <div className="hidden max-w-xl md:grid gap-4 grid-cols-4 text-right"> */}
-          {/* </div> */}
+        <Typography variant="h4" color="blue">GYSP</Typography>
 
           <button className="secondary-button">Sign in</button>
           <button className="primary-button"  onClick={() => {
