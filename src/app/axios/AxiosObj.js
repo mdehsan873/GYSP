@@ -4,7 +4,7 @@ import secureLocalStorage from "react-secure-storage";
 const token = secureLocalStorage.getItem('access')
 
 let local = "http://127.0.0.1:8000/"
-let dev = "https://cyber-tutor-x-backend.vercel.app/"
+let dev = "http://13.234.90.126/"
 let url = dev;
 
 let config = {
