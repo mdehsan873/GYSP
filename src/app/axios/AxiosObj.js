@@ -5,7 +5,7 @@ const token = secureLocalStorage.getItem('access')
 
 let local = "http://127.0.0.1:8000/"
 let dev = "https://cyber-tutor-x-backend.vercel.app/"
-let aws="api.gysp.in"
+let aws="https://api.gysp.in"
 let url = aws;
 
 let config = {
