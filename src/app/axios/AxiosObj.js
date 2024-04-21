@@ -6,7 +6,7 @@ const token = secureLocalStorage.getItem('access')
 let local = "http://gysp-app-lb-500921687.ap-south-1.elb.amazonaws.com"
 let dev = "https://cyber-tutor-x-backend.vercel.app/"
 let aws="https://api.gysp.in"
-let url = local;
+let url = aws;
 
 let config = {
   baseURL: url,
